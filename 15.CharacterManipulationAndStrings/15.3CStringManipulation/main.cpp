@@ -86,7 +86,7 @@ int main(){
 	//Returns : Negative value if lhs appears before rhs in lexicographical order.
     //Zero if lhs and rhs compare equal, or if count is zero.
     //Positive value if lhs appears after rhs in lexicographical order. 
-    /*
+    
     //Print out the comparison
 
     const char *string_data1 = "Alabama";
@@ -116,7 +116,7 @@ int main(){
     std::cout << "std::strncmp (" << string_data1 << "," << string_data2 << "," << n << ") : " 
               << std::strncmp(string_data1,string_data2,n) << std::endl;
     
-    */
+    
 
 
     //Find the first occurrence of a character 
@@ -176,7 +176,7 @@ int main(){
     
 
 
-    
+    /*
 	//Find last occurence
 	//CODE STOLEN FROM THE DOCS : 
     std::cout << std::endl;
@@ -189,6 +189,7 @@ int main(){
         std::cout << output+1 << std::endl; //+1 because we want to start printing past 
                                             // the character found by std::strrchr.
    
-   
+   */
+
     return 0;
 }
