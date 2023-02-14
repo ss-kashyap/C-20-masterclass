@@ -5,7 +5,7 @@ int main()
 {
 
     //Check if character is alphanumeric
-    
+    /*
     std::cout << std::endl;
     std::cout << "std::isalnum : "<<std::endl;
 	
@@ -13,19 +13,20 @@ int main()
     std::cout << "^ is alphanumeric : " << std::isalnum('^') << std::endl;
 	
 	//Can use this as a test condition
-	char input_char {'*'};
+	char input_char = '*';
 	if(std::isalnum(input_char)){
 		std::cout << input_char << " is alhpanumeric." << std::endl;
 	}else{
 		std::cout << input_char <<  " is not alphanumeric." << std::endl;
 	}
+    */
     
 
     //Check if character is alphabetic
-    /*
+    
     std::cout << std::endl;
     std::cout << "std::isalpha : "<<std::endl;
-    std::cout <<   "C is alphabetic : " << std::isalpha('e') << std::endl; // 1
+    std::cout <<   "C is alphabetic : " << std::isalpha('c') << std::endl; // sth not equal to zero
     std::cout <<   "^ is alphabetic : " << std::isalpha('^') << std::endl; // 0
     std::cout <<   "7 is alphabetic : " << std::isalpha('7') << std::endl; // 0
 
@@ -34,7 +35,7 @@ int main()
     }else{
         std::cout << 'e' << " is NOT alphabetic" << std::endl;        
     }
-    */
+    
 
 	//Check if a character is blank
     /*
@@ -102,7 +103,7 @@ int main()
     */
 
     //Turning a character to lowercase using the std::tolower() function
-    std::cout << std::endl;
+    /*std::cout << std::endl;
     std::cout << "std::tolwer and std::toupper: " << std::endl;
     char original_str[] {"Home. The feeling of belonging"};
     char dest_str[std::size(original_str)];
@@ -120,6 +121,6 @@ int main()
         dest_str[i] = std::tolower(original_str[i]);
     }
     
-    std::cout << "Lowercase string : " << dest_str << std::endl;
+    std::cout << "Lowercase string : " << dest_str << std::endl;*/
     return 0;
 }
