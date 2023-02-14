@@ -23,6 +23,7 @@ int main()
     
 
     //Check if character is alphabetic
+    /*
     
     std::cout << std::endl;
     std::cout << "std::isalpha : "<<std::endl;
@@ -35,6 +36,7 @@ int main()
     }else{
         std::cout << 'e' << " is NOT alphabetic" << std::endl;        
     }
+    */
     
 
 	//Check if a character is blank
@@ -54,7 +56,8 @@ int main()
         }
     }
     std::cout << "In total we found " << blank_count << " blank characters."<< std::endl;
-   */
+    */
+   
 
 	//Check if character is lowercase or uppercase
     /*
@@ -81,6 +84,7 @@ int main()
     std::cout << "Found " << lowercase_count << " lowercase characters and "
                 <<upppercase_count << " uppercase characters."<<  std::endl;
     */
+    
 
 
     //Check if a character is a digit
@@ -103,7 +107,7 @@ int main()
     */
 
     //Turning a character to lowercase using the std::tolower() function
-    /*std::cout << std::endl;
+    std::cout << std::endl;
     std::cout << "std::tolwer and std::toupper: " << std::endl;
     char original_str[] {"Home. The feeling of belonging"};
     char dest_str[std::size(original_str)];
@@ -121,6 +125,6 @@ int main()
         dest_str[i] = std::tolower(original_str[i]);
     }
     
-    std::cout << "Lowercase string : " << dest_str << std::endl;*/
+    std::cout << "Lowercase string : " << dest_str << std::endl;
     return 0;
 }
