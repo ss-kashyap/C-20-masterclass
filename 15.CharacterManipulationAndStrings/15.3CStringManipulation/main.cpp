@@ -9,7 +9,7 @@ int main(){
     const char message1 [] {"The sky is blue."};
 	
 	//Array decays into pointer when we use const char*
-	const char* message2 {"The sky is blue."};
+	const char *message2 = "The sky is blue.";
     std::cout << "message1 : " << message1 << std::endl;
 	
 	//strlen ignores null character
@@ -33,11 +33,11 @@ int main(){
     /*
     std::cout << std::endl;
     std::cout << "std::strcmp : " << std::endl;
-    const char* string_data1{ "Alabama" };
-    const char* string_data2{ "Blabama" };
+    const char *string_data1 = "Alabama";
+    const char *string_data2 = "Blabama";
 
-    char string_data3[]{ "Alabama" };
-    char string_data4[]{ "Blabama" };
+    char string_data3 [] { "Alabama" };
+    char string_data4 [] { "Blabama" };
 
     //Print out the comparison
     std::cout << "std::strcmp (" << string_data1 << "," << string_data2 << ") : "
@@ -48,7 +48,7 @@ int main(){
 
 
     string_data1 = "Alabama";
-    string_data2 = "Alabamb";
+    string_data2 = "Blabama";
 
     //string_data3 = "Alabama";
     //string_data4 = "Alabamb";
@@ -78,8 +78,8 @@ int main(){
     //Print out the comparison
     std::cout << "std::strcmp (" << string_data1 << "," << string_data2 << ") : "
         << std::strcmp(string_data1, string_data2) << std::endl;
+    
     */
-
 
 	//std::strncmp : int strncmp( const char *lhs, const char *rhs, std::size_t count );
 	//Compares n characters in the strings
@@ -89,8 +89,8 @@ int main(){
     /*
     //Print out the comparison
 
-    const char* string_data1{ "Alabama" };
-    const char* string_data2{ "Blabama" };
+    const char *string_data1 = "Alabama";
+    const char *string_data2 = "Blabama";
     size_t n{3};
     std::cout << std::endl;
     std::cout << "std::strncmp : " << std::endl;
@@ -115,8 +115,8 @@ int main(){
     
     std::cout << "std::strncmp (" << string_data1 << "," << string_data2 << "," << n << ") : " 
               << std::strncmp(string_data1,string_data2,n) << std::endl;
+    
     */
-
 
 
     //Find the first occurrence of a character 
@@ -128,7 +128,7 @@ int main(){
     
 	//we use std::strchr to find all the characters one by one.
 
-	const char * const str { "Try not. Do, or do not. There is no try."};
+	const char *const str { "Try not. Do, or do not. There is no try."};
     //Can make this a const pointer to prevent users from making it point somewhere else
 	char target = 'T';
 	const char *result = str;
@@ -157,9 +157,9 @@ int main(){
 
 	//we use std::strchr to find all the characters one by one.
 
-	const char* str{ "Try not. Do, or do not. There is no try." };
+	const char *str{ "Try not. Do, or do not. There is no try." };
 	char target = 'T';
-	const char* result{ nullptr };
+	const char *result = nullptr;
 	size_t iterations{};
 
 
@@ -173,8 +173,10 @@ int main(){
 	}
 	std::cout << "iterations : " << iterations << std::endl;
     */
+    
 
 
+    
 	//Find last occurence
 	//CODE STOLEN FROM THE DOCS : 
     std::cout << std::endl;
@@ -182,10 +184,11 @@ int main(){
 	//doc : https://en.cppreference.com/w/cpp/string/byte/strrchr
 	
     char input[] = "/home/user/hello.cpp";
-    char* output = std::strrchr(input, '/');
+    char *output = std::strrchr(input, '/');
     if(output)
         std::cout << output+1 << std::endl; //+1 because we want to start printing past 
                                             // the character found by std::strrchr.
+   
    
     return 0;
 }
