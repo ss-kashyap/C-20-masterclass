@@ -1,10 +1,11 @@
 #include <iostream>
 #
 
-int main(){
+int main()
+{
 
     //Check if character is alphanumeric
-    /*
+    
     std::cout << std::endl;
     std::cout << "std::isalnum : "<<std::endl;
 	
@@ -18,7 +19,7 @@ int main(){
 	}else{
 		std::cout << input_char <<  " is not alphanumeric." << std::endl;
 	}
-    */
+    
 
     //Check if character is alphabetic
     /*
