@@ -23,9 +23,9 @@ int main(){
 	std::cout << std::endl;
 	std::cout << "More std::strcat : " << std::endl;
 	
-    char *dest1 = new char[30]{'F','i','r','e','l','o','r','d','\0'};
+    char *dest1 = new char[30] {'F','i','r','e','l','o','r','d','\0'};
     char *source1 = 
-        new char[30]{',','T','h','e',' ','P','h','e','n','i','x',' ','K','i','n','g','!','\0'};
+        new char[30] {',','T','h','e',' ','P','h','e','n','i','x',' ','K','i','n','g','!','\0'};
 		
 	//NOTE TO SELF : 
 			//Describe what's going to happen in std::strcat before you do the cat :
@@ -55,10 +55,10 @@ int main(){
     
     //You can even use the returned pointer immediately for print out
     //This is a pattern you'll see a lot in C++ code out there.
-    std::cout << std::strncat(dest2,source2,6) << std::endl;
+    std::cout << std::strncat(dest2, source2,6) << std::endl;
     
     //Or you can do std::strncat separately and print dest2
-    std::strncat(dest2,source2,6);
+    std::strncat(dest2, source2, 6);
     std::cout << "The concatenated string is : " << dest2 << std::endl;
     */
 
@@ -72,7 +72,7 @@ int main(){
 													//Contains garbage data
 													//Not initialized
 													
-    std::strcpy(dest3,source3);
+    std::strcpy(dest3, source3);
     
     std::cout << "sizeof(dest3) : " << sizeof(dest3) << std::endl;
     std::cout << "std::strlen(dest3) : " << std::strlen(dest3) << std::endl;
@@ -82,6 +82,7 @@ int main(){
 
     //std::strncpy : Copy n characters from src to dest -
     //signature : char *strncpy( char *dest, const char *src, std::size_t count );
+    
 	std::cout << std::endl;
     std::cout << "std::strncpy:" << std::endl;
     const char* source4 = "Hello";
@@ -91,15 +92,10 @@ int main(){
     std::cout << "dest4 : " << dest4 << std::endl;
     
 	std::cout << "Copying..." << std::endl;
-    std::strncpy(dest4,source4,5);
+    std::strncpy(dest4, source4,5);
     
     std::cout << "dest4 : " << dest4 << std::endl;
-
-
-
-
- 
-
     
+
     return 0;
 }

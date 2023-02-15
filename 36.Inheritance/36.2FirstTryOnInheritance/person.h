@@ -1,8 +1,8 @@
 #ifndef PERSON_H
 #define PERSON_H
 
-#include <string>
-#include <iostream>
+#include<string>
+#include<iostream>
 
 class Person
 {
@@ -21,6 +21,7 @@ public:
         return last_name;
     }
 	
+    
     //Setters
     void set_first_name(std::string_view fn){
         first_name = fn;
@@ -28,9 +29,11 @@ public:
     void set_last_name(std::string_view ln){
         last_name = ln;
     }
+    
+
 private : 
-    std::string first_name{"Mysterious"};
-    std::string last_name{"Person"};
+    std::string first_name = "Mysterious";
+    std::string last_name =  "Person";
 };
 
 

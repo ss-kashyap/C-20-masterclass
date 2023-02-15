@@ -14,7 +14,7 @@ public:
     Player(std::string_view game_param);
     
 private : 
-    std::string m_game{"None"};
+    std::string m_game = "None";
 };
 
 #endif // PLAYER_H
