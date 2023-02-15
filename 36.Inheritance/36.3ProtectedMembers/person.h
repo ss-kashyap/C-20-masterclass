@@ -29,8 +29,8 @@ public:
         last_name = ln;
     }
 protected : 
-    std::string first_name{"Mysterious"};
-    std::string last_name{"Person"};
+    std::string first_name = "Mysterious";
+    std::string last_name = "Person";
 };
 
 

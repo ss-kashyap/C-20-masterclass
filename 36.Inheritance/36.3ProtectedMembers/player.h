@@ -15,7 +15,7 @@ public:
             std::string_view last_name_param);
     
 private : 
-    std::string m_game{"None"};
+    std::string m_game = "None";
 };
 
 #endif // PLAYER_H
