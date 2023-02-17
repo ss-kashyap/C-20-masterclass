@@ -18,8 +18,8 @@ CivilEngineer::CivilEngineer(std::string_view fullname,int age,
     std::cout << "Custom constructor called for CivilEngineer ... " << std::endl;
 }
 
-CivilEngineer::CivilEngineer(const CivilEngineer& source)
-    : Engineer(source) , m_speciality(source.m_speciality)
+CivilEngineer::CivilEngineer(const CivilEngineer &source)
+    : Engineer{source} , m_speciality{source.m_speciality}
 {
     std::cout << "Custom copy constructor called for CivilEngineer ... " << std::endl;
 }

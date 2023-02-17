@@ -8,8 +8,7 @@ class Person
     friend std::ostream& operator<<(std::ostream& , const Person& person);
 public:
     Person() ;
-    Person(std::string_view fullname,int age,
-    const std::string address);
+    Person(std::string_view fullname,int age, const std::string address);
     ~Person();
     
     //Getters

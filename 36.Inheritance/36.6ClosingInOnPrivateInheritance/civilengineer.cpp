@@ -16,7 +16,7 @@ std::ostream& operator<<(std::ostream& out, const CivilEngineer& operand){
                     //",address : " << operand.get_address() <<
                     ",contract_count : " << operand.contract_count <<
                     ",speciality : " << operand.m_speciality << "]";
-                    */
+    */                
                   
 				
     return out;  

@@ -31,7 +31,7 @@ public:
     }
     
 private : 
-    int contract_count{0};
+    int contract_count = 0;
 };
 
 #endif // ENGINEER_H

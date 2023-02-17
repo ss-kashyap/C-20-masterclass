@@ -13,7 +13,7 @@ CivilEngineer::CivilEngineer()
 
 CivilEngineer::CivilEngineer(std::string_view fullname,int age,
     std::string_view address,int contract_count, std::string_view speciality)
-     : Engineer(fullname,age,address,contract_count), m_speciality(speciality)
+     : Engineer{fullname,age,address,contract_count}, m_speciality{speciality}
 {
     std::cout << "Custom constructor called for CivilEnginner ... " << std::endl;
 }

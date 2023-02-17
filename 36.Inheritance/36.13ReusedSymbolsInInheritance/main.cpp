@@ -1,9 +1,11 @@
 #include <iostream>
 #include "child.h"
+#include "parent.h"
 
 
 
 int main(){
+    
 	Child child(33);
     child.print_var();// Calls the method in Child
     child.Parent::print_var(); // Calls the method in Parent, 
@@ -12,5 +14,11 @@ int main(){
 							   
     std::cout << "--------" << std::endl;
     child.show_values();
+    
+
+   /*
+   Parent p1;
+   p1.print_var();
+   */
     return 0;
 }

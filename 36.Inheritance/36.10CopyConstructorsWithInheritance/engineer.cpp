@@ -25,19 +25,19 @@ Engineer::Engineer(const Engineer& source)
 
 /*
 Engineer::Engineer(const Engineer& source)
-     : Person(source.m_full_name,source.m_age,source.get_address())
+     : Person(source.m_full_name, source.m_age, source.get_address())
         , contract_count(source.contract_count)
 {
     std::cout << "Custom copy constructor for Engineer called..." << std::endl;
 }
 */
 
-Engineer::Engineer(const Engineer& source)
-     : Person(source)
-        , contract_count(source.contract_count)
+Engineer::Engineer(const Engineer &source)
+     : Person(source), contract_count(source.contract_count)
 {
     std::cout << "Custom copy constructor for Engineer called..." << std::endl;
 }
+
 
 std::ostream& operator<<(std::ostream& out , const Engineer& operand){
      out << "Engineer [Full name : " << operand.get_full_name() <<
