@@ -3,13 +3,15 @@
 #include "oval.h"
 #include "circle.h"
 
-void draw_shape(Shape * s){
+
+void draw_shape(Shape *s){
     s->draw();
 }
 
-void draw_shape_v1(const Shape& s_r){
+void draw_shape_v1(const Shape &s_r){
     s_r.draw();
 }
+
 
 
 int main(){
@@ -24,7 +26,7 @@ int main(){
     //circle1.draw();
 
 
-
+    
     //Base pointers
     Shape * shape_ptr = &shape1;
     //shape_ptr->draw(); // Shape::draw
@@ -35,32 +37,30 @@ int main(){
     shape_ptr = &circle1;
     //shape_ptr->draw(); // Circle::draw()
 
-
+    
     //Base references
     Shape& shape_ref = circle1;
     //shape_ref.draw(); // Cicle::draw()
 
 
- 
     //Drawing shapes
-    //draw_shape(&circle1);
+    //draw_shape(&oval1);
     //draw_shape_v1(circle1);
 
-
+    
     //Raw pointers
     shape_ptr  = &oval1;
-    //shape_ptr->get_x_rad();
+    //shape_ptr->draw();
+    //shape_ptr->get_x_rad();//cpmpiler error
 
-
+   
     //Shapes stored in collections
-    Shape* shape_collection[]{&shape1,&oval1,&circle1};
+    Shape *shape_collection [] {&shape1, &oval1, &circle1};
 	 
-	 for(Shape* s_ptr : shape_collection){
+	 for(Shape *s_ptr : shape_collection){
         s_ptr->draw();
     }
-  
-
     
-   
+  
     return 0;
 }
