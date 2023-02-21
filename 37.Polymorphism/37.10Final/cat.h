@@ -16,7 +16,8 @@ public:
     }
 	
 	//This method is useful though
-	void virtual run() const override{
+    //comming from upstream class
+	virtual void run() const override{
 		//
 	}
 };

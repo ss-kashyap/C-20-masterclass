@@ -26,11 +26,12 @@ int main(){
     std::cout  << "***********************************************" << std::endl;
 
     //Shape polymorphism
-
-    Shape* shapes[] {&shape1,&ellipse1};
+    
+    Shape *shapes[] {&shape1, &ellipse1};
     for(auto &s : shapes){
         std::cout << "count : " << s->get_count() << std::endl;
     }
+    
    
     return 0;
 }

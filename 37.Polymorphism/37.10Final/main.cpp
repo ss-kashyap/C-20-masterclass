@@ -2,6 +2,7 @@
 
 //Intersting fact #1
 /*
+
 class Plane final{
     Plane()=default;
 };
@@ -11,6 +12,7 @@ class FigherJet : public Plane{
     
 };
 */
+
 
 int main(){
 

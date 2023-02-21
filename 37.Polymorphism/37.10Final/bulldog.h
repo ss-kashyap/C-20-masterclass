@@ -10,9 +10,11 @@ public:
     
     //Will throw a compiler error
     /*
+    
    virtual void run() const override{
        std::cout << "Bulldog::run() called" << std::endl;
    }
+   
    */
 
 };
